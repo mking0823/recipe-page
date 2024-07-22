@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+}
+
+
+@font-face {
+    font-family:"outfit" ;
+    src: url(/assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+
+}
+
+@font-face {
+    font-family: "young-serif";
+    src: url(/assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+/*-----------------------------------Layout-----------------------------*/
+
+main{
+ max-width: 736px; 
+ width: 100%;  
+ margin: 0 auto;
+ padding:40px;
+ border-radius: 24px;
+}
+
+img{
+    display: block;
+    width:100%;
+    border-radius: 12px;
+}
+li{
+    margin-bottom: 8px;
+}
+
+
+p{
+    margin-bottom:32px;
+}
+
+
+.sect-time{
+    padding: 20px  0 20px 28px;
+    border-radius: 24px;
+}
+
+
+.nutri-container{
+    display: flex;
+    align-items: center;
+}
+
+dd,dt{
+
+    width: 50%;
+
+}
+
+li{
+    padding-left: 24px;
+}
+
+/*---------------------------- Color and Fonts---------------*/
+
+body{
+    background-color: #F3E5D7;
+}
+
+main{
+    
+    background-color: white;;
+}
+
+h1,h2,h3{
+    font-family: "young-serif";
+    color:#854632;
+}
+
+p, li, dd{
+    font-family:"outfit" ;
+    color: #5F564D; 
+    font-weight: 400; 
+}
+
+.sect-time{
+    background-color: #FFF7FB;
+}
+
+.sect-ingredients,.sect-instructions{
+    border-bottom:  1px solid #E3DDD7;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.nutri-container{
+    border-bottom:  1px solid #E3DDD7;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+li::marker, dd{
+    color:#854632;
+    font-weight: 700;
+     
+}
+ strong{
+    font-weight: 700;
+    text-decoration: none;
+ }
+
+ dt{
+    font-family:"outfit";
+ }
+/*----------------------Media Query---------------------------*/
+
+
+@media (max-width:700px) {
+
+    main{
+     
+        min-width:375px;
+        padding:0 0 40px 0;
+    }
+
+    section, h1 , p {
+        margin-left: 32px;
+        margin: 32px;
+
+    }
+    img{
+        margin-top: 0;
+      
+    }
+    
+}
+
